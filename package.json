@@ -1,7 +1,7 @@
 {
   "name": "jaspers",
-  "version": "1.0.0",
-  "description": "The Jaspers SEC data connection for Jaspers Terminal: company screens, filings, and insider activity over jaspers/sec.",
+  "version": "2.0.0",
+  "description": "The Jaspers SEC data connection for Jaspers Terminal: jaspers/screener for company screens and insider activity, jaspers/research for one company's filings.",
   "license": "MIT",
   "private": true,
   "type": "module",

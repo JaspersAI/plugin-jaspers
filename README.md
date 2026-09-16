@@ -2,7 +2,12 @@
 
 Jaspers SEC data for [Jaspers Terminal](https://github.com/JaspersAI), an open source, extensible desktop terminal for financial research.
 
-Declares `jaspers/sec`, the Jaspers SEC MCP server (`https://analyst-api.jsprai.com/mcp/open`), with no views or sources of its own. The screener and research plugins run on it, and the assistant reaches every tool it lists (company screens, filing search and sections, insider activity, qualitative screens) through `core/mcp`.
+Declares two connections to the Jaspers MCP server, one per Jaspers module, with no views or sources of its own:
+
+- `jaspers/screener`: screens across the whole universe, filing text search and sections, insider activity, and qualitative screens.
+- `jaspers/research`: one company's filings, searched, fetched, queried, and counted, and its load status.
+
+Both also carry the helpers, `get_guide` and `show_citations`, and both run on one key. The screener plugin runs on `jaspers/screener`, the research plugin on both, and the assistant reaches every tool through `core/mcp`.
 
 ## Install
 
